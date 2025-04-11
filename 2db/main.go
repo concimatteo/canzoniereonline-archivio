@@ -185,8 +185,8 @@ func processDirectory(directory string, regexFile string) {
 }
 
 func main() {
-	directory := "archivio-canzoni" // Cambia con il percorso della cartella contenente i file TeX
-	regexFile := "regex.txt"        // File contenente le regex per la pulizia del testo
+	directory := "../archivio-canzoni" // Cambia con il percorso della cartella contenente i file TeX
+	regexFile := "regex.txt"           // File contenente le regex per la pulizia del testo
 
 	processDirectory(directory, regexFile)
 }

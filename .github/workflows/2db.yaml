@@ -21,7 +21,7 @@ jobs:
       - name: Esegui il programma
         run: go run 2db/main.go
 
-      - nname: Crea una GitHub Release
+      - name: Crea una GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v1.0.${{ github.run_number }}

@@ -21,8 +21,9 @@ jobs:
       - name: Esegui il programma
         run: go run 2db/main.go
 
-      - name: Salva file come artefatto
-        uses: actions/upload-artifact@v3
+      - nname: Crea una GitHub Release
+        uses: softprops/action-gh-release@v1
         with:
-          name: db-canzoniereonline
-          path: 2db/songs.db
+          tag_name: v1.0.${{ github.run_number }}
+          name: "db-anzoniereonline ${{ github.run_number }}"
+          files: 2db/songs.db 
